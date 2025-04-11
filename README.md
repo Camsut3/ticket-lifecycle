@@ -2,145 +2,119 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
-
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to create, work, and resolves tickets within osTicket](https://www.youtube.com)
+<h1>osTicket - Tickets and Ticket Lifecycle</h1>
+This tutorial demonstrates the lifecycle of a ticket from the persepective of a helpdesk professional using osTicket, an open-source help desk ticketing system.<br />
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
+- osTicket
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 10</b> 
 
-<h2>Ticket Lifecycle Stages</h2>
 
-- Intake
-- Assignment and Communication
-- Working the Issue
-- Resolution
+<h2>Ticket Lifecycle</h2>
 
-<h2>Lifecycle Stages</h2>
-# osTicket Lifecycle Examples
+<h2>Step 1: Log in to osTicket as a helpdesk agent</h2>
+<p>
+The helpdesk professional logs into the osTicket website with their credentials. In this case Jane Doe, the helpdesk professional logs in with her credentials.  
+</p>
 
-This document demonstrates **real-world lifecycle examples** for support tickets in osTicket. Each example walks through the journey of a ticket from creation to resolution, showcasing how departments, help topics, agents, and automations interact.
+<p>
+<img src="https://imgur.com/WR9ZTUD.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
----
+<h2>Step 2: Note the tickets in the queue</h2>
 
-## 🎟️ Example 1: Basic IT Support Request
+<p>Once the helpdesk professional logs in, they will presented with a queue of unassigned tickets that need to be resolved. To see tickets that have been specifically to you, click on the 'My Tickets' tab.</p>
 
-**Scenario**: A user submits a request for a password reset.
+<p>
+<img src="https://imgur.com/n4veNDu.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-- **Help Topic**: Account Support → Password Reset
-- **Department**: IT Support
-- **Auto-assign**: Yes, based on topic
-- **SLA Plan**: 1 Hour First Response
+<h2>Step 3: Read the ticket</h2>
 
-### Lifecycle:
-1. User submits ticket via web form.
-2. Ticket is auto-assigned to "IT Support" department.
-3. Agent receives notification and takes ownership.
-4. Agent resets the password and updates ticket.
-5. User is notified via email.
-6. Ticket is marked "Resolved."
-7. After 3 days of inactivity, ticket is automatically closed.
+<p>The helpdesk professional will read the ticket in order to gather the important details of the issue described by the user. Here the issue is that Adobe is not working.</p>
 
----
+<p>
+<img src="https://imgur.com/5iJZfEg.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-## 📦 Example 2: Customer Service – Order Inquiry
+<h2>Step 4: Assess the priority of the ticket</h2>
 
-**Scenario**: A customer wants to check the status of an order.
+<p>When tickets arrive, the priority will often be initially determined by the user, so it may not have been accurately assessed according to the IT department's criteria. Here, we can read that the issue is that Adobe Reader is not working. As a helpdesk professional, you can determine and set the priority. In the image, helpdesk professinal Jane Doe decided that the priority is 'High'.</p>
 
-- **Help Topic**: Orders → Shipping Status
-- **Department**: Customer Service
-- **Auto-responder**: Enabled
-- **SLA Plan**: 4 Hours Response
+<p>
+<img src="https://imgur.com/ngoXGMw.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-### Lifecycle:
-1. User emails `support@yourdomain.com`.
-2. osTicket pulls in the message and creates a new ticket.
-3. Ticket routed to "Customer Service."
-4. Auto-response confirms receipt.
-5. Agent replies with shipping details.
-6. User replies back with additional questions.
-7. Agent updates ticket until resolution.
-8. Ticket marked "Resolved," then closed after 72 hours of no reply.
+<h2>Step 5: Assign a ticket to an IT professional</h2>
 
----
+<p>Either the queue manager or the helpdesk professional will decide who the ticket will be resolved by. They will assign the ticket to that individual. In this case, the ticket is assigned to 'Ben Lawson'. You can send the IT professional quick note as well at this point.</p>
 
-## 🧾 Example 3: Billing Dispute Ticket
+<p>
+<img src="https://imgur.com/lmtGOcF.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-**Scenario**: A user reports a double charge on their invoice.
+<p>
+<img src="https://imgur.com/0Wk4l2Q.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-- **Help Topic**: Billing → Disputes
-- **Department**: Finance
-- **Priority**: High
-- **SLA Plan**: 24 Hours
+<h2>Step 6: Determine the Service Level Agreement (SLA) level</h2>
 
-### Lifecycle:
-1. Ticket is created via web or email.
-2. Routed to "Finance" department.
-3. Finance agent tags ticket as "Urgent."
-4. Investigates billing system.
-5. Contacts customer with results.
-6. Coordinates refund or adjustment.
-7. User confirms issue resolved.
-8. Ticket is closed.
+<p>A Service Level Agreement is essentially a target for how long the ticekt will be open. Your company's will have guidelines to help you to determine this. In the image, we can see that the help desk professional has determined that Adobe not working is a Severity B, or mid-level problem.</p>
 
----
+<p>
+<img src="https://imgur.com/xs3Pw6v.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-## ⚙️ Example 4: Internal IT Equipment Request
+<p>
+<img src="https://imgur.com/VxQmxM6.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-**Scenario**: An employee requests a new monitor.
+<h2>Step 7: Notify the user who created the ticket</h2>
 
-- **Help Topic**: Internal Request → Equipment
-- **Form Fields**: Equipment type, justification
-- **Department**: IT Procurement
-- **Custom Fields**: Yes (dropdowns, text fields)
+<p>Let the user who created the ticket know that you are taking action to resolve the problem. Inform them about any pertinent details, for example, how long it might take to resolve. In the image below, we see that Jane Doe informs, Ken, the user, that she has assigned the ticket and that Ken can expect the problem to be resolved within one hour.</p>
 
-### Lifecycle:
-1. Employee submits ticket with custom form.
-2. Supervisor is auto-notified for approval.
-3. Once approved, IT Procurement is notified.
-4. Agent assigns task to technician.
-5. Technician delivers equipment.
-6. Employee confirms receipt.
-7. Ticket marked closed.
+<p>
+<img src="https://imgur.com/49f14xj.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
----
+<h2>Step 8: The Assigned IT Professional will fix the issue</h2>
 
-## 🔄 Example 5: Escalated Technical Issue
+<p>Ben, the IT professional who was assigned the ticket, has fixed the problem. He clicks 'resolved' on the ticket and adds a message to the thread informing other IT professionals that the ticket has been closed.</p>
 
-**Scenario**: A user has a persistent issue with software crashing.
+<p>
+<img src="https://imgur.com/mg1UJyB.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-- **Help Topic**: Software Support → App Crashes
-- **Department**: Tier 1 Support → Escalation to Tier 2
-- **SLA Plan**: 8 Hours Resolution
-- **Tasks/Sub-Tickets**: Enabled
+<h2>Step 9: The ticket will be removed from the queue</h2>
 
-### Lifecycle:
-1. Ticket created and handled by Tier 1.
-2. Tier 1 agent unable to solve and flags as "Needs Escalation."
-3. Supervisor re-assigns to Tier 2 Support.
-4. Tier 2 agent creates sub-ticket to log testing steps.
-5. Issue is fixed and user is updated.
-6. Supervisor marks main ticket as resolved.
+<p>In the image, we can see that the ticket has been removed from the overall queue of tickets.</p>
 
----
+<p>
+<img src="https://imgur.com/t5savIl.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-## 📌 Final Notes
+<h2>Step 10: The ticket will be under the 'Closed' tab</h2>
 
-These examples can be tailored for any organization’s workflow. You can enhance automation with:
+<p>The resolved ticket can still be found under the 'Closed' tab. Here, you can find a list of all the tickets that have been resolved.</p>
 
-- SLA breach alerts
-- Auto-assignments based on Help Topics
-- Canned responses
-- Custom forms and fields
-- Ticket filters
+<p>
+<img src="https://imgur.com/j1VzSMW.png" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
